@@ -1,0 +1,29 @@
+{
+  "name": "kryptos-recovery-layer",
+  "version": "0.1.0",
+  "description": "Private-state recovery SDK proof for seed-derived ZK notes and public event replay.",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "kryptos-recover": "./src/cli.js"
+  },
+  "scripts": {
+    "demo": "node ./src/cli.js demo",
+    "test": "node --test"
+  },
+  "keywords": [
+    "zk",
+    "revive",
+    "kusama",
+    "recovery",
+    "shielded-notes"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@kusamashield/shielded-transfers": "^0.1.4",
+    "ethers": "^6.17.0"
+  }
+}
